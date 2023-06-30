@@ -14,4 +14,11 @@ RSpec.describe Solver do
       expect { solver.factorial(-5) }.to raise_error(ArgumentError, 'Factorial is not defined for negative numbers.')
     end
   end
+
+  describe '#reverse' do
+    it 'returns the reversed word' do
+      expect(solver.reverse('hello')).to eq('olleh')
+      expect(solver.reverse('world')).to eq('dlrow')
+    end
+  end
 end
