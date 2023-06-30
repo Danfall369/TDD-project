@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'FizzBuzz'
+require_relative 'fizz_buzz'
 
 RSpec.describe Solver do
   let(:solver) { Solver.new }
@@ -19,6 +19,15 @@ RSpec.describe Solver do
     it 'returns the reversed word' do
       expect(solver.reverse('hello')).to eq('olleh')
       expect(solver.reverse('world')).to eq('dlrow')
+    end
+  end
+
+  describe '#fizzbuzz' do
+    it 'returns the correct string based on the input number' do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+      expect(solver.fizzbuzz(7)).to eq('7')
     end
   end
 end
