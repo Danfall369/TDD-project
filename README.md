@@ -1,5 +1,3 @@
-Sure! Here's an updated version of the README file with the requested changes:
-
 # Fizz Buzz
 
 Fizz Buzz is a Ruby class that provides various methods for solving common mathematical and string manipulation problems. It includes methods for calculating factorials, reversing strings, and implementing the FizzBuzz game.
